@@ -14,7 +14,10 @@ function LoginConectar(U,P)
 		}
 		else
 		{
-			alert("Bienvenido")
+			var OUsario=jQuery.parseJSON(msg);
+			ID_Usuario=OUsuario.usuario;
+			alert("Bienvenido " + ID_Usuario)
+			location.href="#Busqueda";
 		}
 	});
 }
